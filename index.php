@@ -15,6 +15,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/indexStyle.css">
+    <script src="https://kit.fontawesome.com/167081539d.js" crossorigin="anonymous"></script>
     <title>PMS - Production Management System</title>
 </head>
 
@@ -32,7 +33,7 @@
         </form>
     </header>
 
-    <footer>&copy Jakub Żbikowski</footer>
+    <footer>PMS &copy Jakub Żbikowski</footer>
 </body>
 
 </html>
