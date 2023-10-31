@@ -46,7 +46,7 @@
                 }
             // Nieprawidlowe zalogowanie (bledne dane)
             }else{
-                $_SESSION['login_error'] = '<span style="color:red">Nieprawidłowy login lub hasło!</span>';
+                $_SESSION['login_error'] = '<span style="color:red;">Nieprawidłowy login lub hasło!</span>';
                 header('Location: index.php');
             }
         }

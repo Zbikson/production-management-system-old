@@ -5,14 +5,16 @@ body{
 }
 
 header{
-    background-color: #1C3D86;
+    background-color: #f4f3f3;
     height: auto;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #252525;
     display: flex;
     width: 98%;
     padding: 1%;
+    -webkit-box-shadow: 0px 2px 19px -1px rgba(37,37,37,0.5); 
+    box-shadow: 0px 2px 19px -1px rgba(37,37,37,0.5);
 }
 
 .pmsTitle{
@@ -40,6 +42,8 @@ header{
     color: #252525;
     border-radius: 5px;
     padding: 5px;
+    -webkit-box-shadow: 0px 2px 19px -1px rgba(37,37,37,0.5); 
+    box-shadow: 0px 2px 19px -1px rgba(37,37,37,0.5);
 }
 
 #title{
@@ -59,23 +63,28 @@ header{
     margin: 10px;
 }
 
+.searchForm{
+    display: flex;
+    margin-left: auto;
+    padding-right: 200px;
+}
+
 #searchBar{
     width: 300px;
     text-align: center;
     border-radius: 10px 0px 0px 10px;
     border: 1px solid #6e6e6e;
     height: 28px;
-    margin-left: auto;
 }
 #searchBtn{
     text-align: center;
     border-radius: 0px 10px 10px 0px;
-    border: 1px solid #1C3D86;
+    border: none;
     height: 32px;
     padding: 5px;
-    margin-right: 100px;
     background-color: #1C3D86;
     color: #eaeaea;
+    padding: 10px;
 }
 
 .items{
@@ -91,13 +100,13 @@ header{
 
 #addItemBtn{
     display: inline-flex;
-    background-color: #656565;
+    background-color: #1C3D86;
     opacity: 90%;
     width: 20%;
     height: 150px;
     margin: 10px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 3px;
     color: #eaeaea;
     font-size: 20px;
     align-items: center;
@@ -212,7 +221,6 @@ li{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    transition: 200ms ease-in-out;
     border: 1px solid #252525;
     border-radius: 10px;
     z-index: 10;

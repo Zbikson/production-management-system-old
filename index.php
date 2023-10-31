@@ -33,7 +33,7 @@
         </form>
     </header>
 
-    <footer>PMS &copy Jakub Żbikowski</footer>
+    <!-- <footer>PMS &copy Jakub Żbikowski</footer> -->
 </body>
 
 </html>

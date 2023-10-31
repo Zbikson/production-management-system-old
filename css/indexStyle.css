@@ -2,7 +2,8 @@ body {
     margin: 0;
     background-image: url("../img/background.png");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -11,32 +12,36 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 200px;
+    opacity: 98%;
 }
 
 form {
     width: 400px;
+    height: auto;
     padding: 30px;
-    border-radius: 15px;
-    background-color: rgb(28, 61, 134, 0.85);
+    border-radius: 2px;
+    background-color: #f4f3f3;
+    -webkit-box-shadow: 0px 2px 19px -1px rgba(37,37,37,0.5); 
+    box-shadow: 0px 2px 19px -1px rgba(37,37,37,0.5);
 }
 
 input {
     display: block;
-    border: 2px solid #5f5f5f;
     width: 93%;
+    border: none;
+    border-bottom: 2px solid #5f5f5f;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px;
     font-size: 18px;
     margin-top: 15px;
-
 }
 
 button {
     background-color: #41b05b;
-    border: 1px solid #41b05b;
-    border-radius: 10px;
-    color: #eaeaea;
+    border: none;
+    border-radius: 3px;
+    color: #f4f3f3;
     font-size: 15px;
     padding: 10px;
     cursor: pointer;
@@ -46,7 +51,7 @@ button {
 }
 
 h2 {
-    color: rgb(235, 235, 235);
+    color: #5f5f5f;
     font-size: 35px;
     text-align: center;
     margin: 30px;
@@ -69,7 +74,9 @@ button:hover{
     opacity: 0.9;
 }
 
-/* Dla telefonów komórkowych: */
-[class*="footer"] {
-    width: 100%;
-  }
+input:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}

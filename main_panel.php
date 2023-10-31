@@ -38,8 +38,12 @@
     <div class="container">
         <div id="title">
             <h1 id="panelTitleMain">Panel zleceń</h1>
-            <input type="text" id="searchBar" placeholder="Wyszukaj">
-            <button type="button" id="searchBtn">Szukaj</button>
+
+            <form class="searchForm">
+                <input type="text" id="searchBar" placeholder="Wyszukaj">
+                <button type="submit" id="searchBtn">Szukaj</button>
+            </form>
+            
         </div>
         
         <div id="orders">
@@ -53,7 +57,7 @@
     </div>
 
 
-    <footer>PMS &copy Jakub Żbikowski</footer>
+    <!-- <footer>PMS &copy Jakub Żbikowski</footer> -->
 </body>
 
 </html>

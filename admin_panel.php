@@ -62,7 +62,7 @@
     
     <div class="modal active" id="modal">
         <div class="modal-header">
-            <div class="title">Modal</div>
+            <div class="title">Dodaj zlecenie</div>
             <button data-close-button class="close-button">&times;</button>
         </div>
         <div class="modal-body">
@@ -81,7 +81,7 @@
     </div>
     <div class="active" id="overlay"></div>
 
-    <footer>PMS &copy Jakub Żbikowski</footer>
+    <!-- <footer>PMS &copy Jakub Żbikowski</footer> -->
 </body>
 
 </html>
