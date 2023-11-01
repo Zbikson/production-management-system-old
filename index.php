@@ -22,7 +22,7 @@
 <body>
     <header>
         <form action="login.php" method="post">
-            <h2>PMS - Login</h2>
+            <h2><i style="color: #006BCB;" class="fa-solid fa-people-roof"></i> PMS</h2>
             <input type="text" name="login" placeholder="Login">
             <input type="password" name="password" placeholder="Hasło">
             <button type="submit">Zaloguj</button>

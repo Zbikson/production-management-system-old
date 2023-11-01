@@ -12,7 +12,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 200px;
-    opacity: 98%;
+    opacity: 95%;
 }
 
 form {
@@ -59,7 +59,7 @@ h2 {
 }
 
 footer {
-    background-color: #1C3D86;
+    background-color: #006BCB;
     width: auto;
     text-align: center;
     padding: 10px;
