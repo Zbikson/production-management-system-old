@@ -126,6 +126,45 @@ header{
     margin-right: 10px;
 }
 
+.input-form{
+    margin: 0 auto;
+    text-align: center;
+    margin: 5px;
+}
+
+.input-form input{
+    border-radius: 5px;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid #252525;
+    margin: 6px;
+}
+
+.input-form p{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.input-form select{
+    border-radius: 5px;
+    padding: 2px;
+    margin: 5px;
+}
+
+.input-form #add-button{
+    background-color: #41b05b;
+    border: none;
+    border-radius: 3px;
+    color: #eaeaea;
+    font-size: 1rem;
+    padding: 5px 10px;
+}
+
+.input-form #add-button:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+
 
 footer{
     background-color: #006BCB;

@@ -72,17 +72,70 @@
 
     <div class="modal active" id="modal2">
         <div class="modal-header">
-            <div class="title">Modal2</div>
+            <div class="title">Dodaj pracownika</div>
             <button data-close-button class="close-button">&times;</button>
         </div>
         <div class="modal-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet optio ipsum! Consequuntur animi quod, sed voluptatibus aut commodi dolore aliquam mollitia quisquam tempora quae doloribus. Harum eveniet perspiciatis obcaecati saepe placeat fuga mollitia assumenda modi dolorem, aut corporis dignissimos consequatur ullam, fugit doloribus aperiam a error recusandae optio iusto excepturi. Tenetur deserunt necessitatibus aliquid voluptatum ea tempora itaque id?
+
+            <form class="input-form" id="add-user-form" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+
+                <p>Wprowadź dane pracownika</p>
+                <input type="text" name="username" id="username" placeholder="Nazwa użytkownika"></br>
+                <input type="password" name="password" id="pass" placeholder="Hasło"></br>
+                <input type="text" name="name" id="name" placeholder="Imię"></br>
+                <input type="text" name="lastname" id="lastname" placeholder="Nazwisko"></br>
+
+                <label for="role">Rola:</label>
+                <select id="role" name="role">
+                    <option value="employee">Pracownik</option>
+                    <option value="admin">Administrator</option>
+                </select>
+                </br></br>
+
+                <button id="add-button" type="submit">Dodaj</button>
+            </form>
+
+        <?php
+            require_once("db_connect.php");
+            $connection = @new mysqli($host, $db_user, $db_password, $db_name);
+
+            if ($_SERVER["REQUEST_METHOD"] == "POST"){ 
+                if (!empty($_POST["username"]) && !empty($_POST["password"]) && !empty($_POST["name"]) && !empty($_POST["lastname"]) && !empty($_POST["role"])){
+
+                    if ($connection->connect_error) {
+                        die("Bląd: ". $connection->connect_error);
+                    }
+                    $username = $_POST["username"];
+                    $password = $_POST["password"];
+                    $name = $_POST["name"];
+                    $lastname = $_POST["lastname"];
+                    $role = $_POST["role"];
+
+                    $sql = "INSERT INTO users (user, pass, name, lname, role) VALUES ('$username', '$password', '$name', '$lastname', '$role')";
+
+                    if ($connection->query($sql) === TRUE) {
+                        echo"<p style='color: green;'Pomyślnie dodano pracownika!</p>";
+                }else{
+                    echo "Błąd przy dodawaniu rekordu: " . $sql . $connection->error;
+                }
+
+                $connection->close();
+
+                }else{
+                    echo "<p style='color: red;'>Wypełnij wszystkie pola!</p>";
+
+                }
+            }
+            
+        ?>
+
+
         </div>
     </div>
 
     <div class="modal active" id="modal3">
         <div class="modal-header">
-            <div class="title">Modal3</div>
+            <div class="title">Utwórz procesy</div>
             <button data-close-button class="close-button">&times;</button>
         </div>
         <div class="modal-body">
