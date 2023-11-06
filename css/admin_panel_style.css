@@ -46,45 +46,9 @@ header{
     box-shadow: 0px 2px 19px -1px rgba(37,37,37,0.5);
 }
 
-.header-container{
-    display: flex;
-    width: 100%;
-    align-items: center;
-}
-
-.title{
-    text-align: right;
-    margin: 10px;
-    width: 50%;
-}
-
 #panelTitleAdmin{
     text-align: center;
     margin: 10px;
-}
-
-.searchForm{
-    display: flex;
-    margin-left: auto;
-    padding-right: 200px;
-}
-
-#searchBar{
-    width: 300px;
-    text-align: center;
-    border-radius: 10px 0px 0px 10px;
-    border: 1px solid #6e6e6e;
-    height: 28px;
-}
-#searchBtn{
-    text-align: center;
-    border-radius: 0px 10px 10px 0px;
-    border: none;
-    height: 31px;
-    padding: 5px;
-    background-color: #006BCB;
-    color: #eaeaea;
-    padding: 10px;
 }
 
 .panel-management{
@@ -131,7 +95,6 @@ header{
     opacity: 100%;
     cursor: pointer;
 }
-
 
 .input-form{
     margin: 0 auto;
@@ -234,32 +197,6 @@ a.adminPanelBtn:hover, a.adminPanelBtn:active{
     height: 40px;
     width: 70px;
 }
-
-#searchBtn:hover{
-    opacity: 90%;
-    cursor: pointer;
-}
-
-#searchBar:focus{
-    outline: none;
-}
-
-ul{
-    list-style-type: none;
-    overflow: hidden;
-    background-color: #006BCB;
-    border-radius: 5px;
-    color: #eaeaea;
-    margin: 10px;
-}
-li{
-    float: left;
-    display: block;
-    padding: 15px;
-    border-right: 2px solid #6e6e6e;
-    text-decoration: none;
-}
-
 
 .modal{
     position: fixed;

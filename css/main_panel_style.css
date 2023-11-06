@@ -11,20 +11,21 @@ header{
     align-items: center;
     color: #252525;
     display: flex;
+    min-width: 500px;
     width: 98%;
     padding: 1%;
     -webkit-box-shadow: 0px 2px 19px -1px rgba(37,37,37,0.5); 
     box-shadow: 0px 2px 19px -1px rgba(37,37,37,0.5);
 }
 
-.pmsTitle{
+.pms-title{
     margin: 5px;
     text-align: center;
     width: 50%;
     font-size: x-large;
 }
 
-.userData{
+.user-data{
     float: right;
     text-align: center;
     margin: 5px;
@@ -47,131 +48,45 @@ header{
 }
 
 .header-container{
+    width: 80%;
     display: flex;
-    width: 100%;
-    align-items: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .title{
-    text-align: right;
-    margin: 10px;
     width: 50%;
+    margin: 5px;
+    text-align: right;
+    margin-right: 50px;
 }
 
-#panelTitleAdmin{
-    text-align: center;
-    margin: 10px;
-}
-
-.searchForm{
+.search-form{
+    width: 50%;
     display: flex;
-    margin-left: auto;
-    padding-right: 200px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
 }
 
-#searchBar{
+#search-bar{
     width: 300px;
     text-align: center;
     border-radius: 10px 0px 0px 10px;
-    border: 1px solid #6e6e6e;
-    height: 28px;
+    border: none;
+    background-color: #f4f3f3;
+    height: 30px;
 }
-#searchBtn{
+#search-btn{
     text-align: center;
     border-radius: 0px 10px 10px 0px;
     border: none;
-    height: 31px;
-    padding: 5px;
+    height: 32px;
     background-color: #006BCB;
     color: #eaeaea;
     padding: 10px;
 }
-
-.panel-management{
-    padding: 10px;
-    margin: 10px;
-    width: auto;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.button{
-    display: inline-flex;
-    background-color: #006BCB;
-    opacity: 90%;
-    max-width: 300px;
-    min-width: 220px;
-    width: 20%;
-    height: 150px;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 3px;
-    color: #eaeaea;
-    font-size: 20px;
-    align-items: center;
-    border: none;
-}
-.button i{
-    width: 30%;
-    font-size: 35px;
-    text-align: center;
-    margin-left: 10px;
-}
-.button p{
-    width: 70%;
-    text-align: center;
-    padding: 10px;
-    margin-right: 10px;
-}
-
-.button:hover{
-    opacity: 100%;
-    cursor: pointer;
-}
-
-
-.input-form{
-    margin: 0 auto;
-    text-align: center;
-    margin: 5px;
-}
-
-.input-form input{
-    border-radius: 5px;
-    padding: 8px;
-    border: none;
-    border-bottom: 2px solid #252525;
-    margin: 6px;
-}
-
-.input-form p{
-    font-size: 1.4rem;
-    font-weight: bold;
-}
-
-.input-form select{
-    border-radius: 5px;
-    padding: 2px;
-    margin: 5px;
-}
-
-.input-form #add-button{
-    background-color: #41b05b;
-    border: none;
-    border-radius: 3px;
-    color: #eaeaea;
-    font-size: 1rem;
-    padding: 5px 10px;
-}
-
-.input-form #add-button:hover{
-    opacity: 80%;
-    cursor: pointer;
-}
-
 
 footer{
     background-color: #006BCB;
@@ -235,12 +150,18 @@ a.adminPanelBtn:hover, a.adminPanelBtn:active{
     width: 70px;
 }
 
-#searchBtn:hover{
+.search-form:focus{
+    outline: none;
+    -webkit-box-shadow: 0px 2px 19px -1px rgba(37,37,37,0.5); 
+    box-shadow: 0px 2px 19px -1px rgba(37,37,37,0.5);
+}
+
+#search-btn:hover{
     opacity: 90%;
     cursor: pointer;
 }
 
-#searchBar:focus{
+#search-bar:focus{
     outline: none;
 }
 
@@ -258,64 +179,4 @@ li{
     padding: 15px;
     border-right: 2px solid #6e6e6e;
     text-decoration: none;
-}
-
-
-.modal{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    border-radius: 5px;
-    z-index: 10;
-    background-color: #f4f3f3;
-    width: 500px;
-    max-width: 80%;
-}
-
-.modal.active{
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.modal-header{
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    -webkit-box-shadow: 0px 2px 19px -1px rgba(37,37,37,0.5); 
-    box-shadow: 0px 2px 19px -1px rgba(37,37,37,0.5);
-}
-
-.modal-header .title{
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-
-.modal-header .close-button{
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-
-.modal-body{
-    padding: 20px;
-}
-
-#overlay{
-    position: fixed;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, .5);
-    pointer-events: none;
-}
-
-#overlay.active{
-    opacity: 1;
-    pointer-events: all;
 }
